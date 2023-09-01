@@ -5,7 +5,9 @@ This website offers details regarding Russian casualties during the ongoing aggr
 
 ## Stack: 
 - React
-- TypeScript 
+- ReduxTK
+- TypeScript
+- Axios
 - Vite
 - ESLint 
 - Prettier
