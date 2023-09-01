@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'CustomFont';
+	src: url('./fonts/armalite.woff2') format('truetype');
+	src: url('./fonts/armalite.woff') format('truetype');
+}
+
+@font-face {
+	font-family: 'BlackOpsOne-Regular';
+	src: url('./fonts/BlackOpsOne-Regular.woff2') format('truetype');
+	src: url('./fonts/BlackOpsOne-Regular.woff') format('truetype');
+}
+
+@font-face {
+	font-family: 'Squares';
+	src: url('./fonts/Squares.woff2') format('truetype');
+	src: url('./fonts/Squares.woff') format('truetype');
+}
