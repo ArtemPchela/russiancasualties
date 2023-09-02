@@ -9,8 +9,6 @@ interface ITitleProps {
 const Title: React.FC<ITitleProps> = ({ displayData, selectedStartDate }) => {
   const { day, date } = displayData.data || {};
 
-  console.log(displayData.data);
-
   return (
     <div className="flex flex-col justify-center items-center max-w-[90%] mx-auto bg-10 backdrop-opacity-10 rounded-2xl">
       <h1 className="font-custom text-center mb-2 title">
