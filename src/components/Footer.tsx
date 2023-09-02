@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mt-[10%]">
+    <footer>
       <div className="w-[25%] mb-2 bg-black mx-auto">
         <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent shadow-inner"></div>
       </div>

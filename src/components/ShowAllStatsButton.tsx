@@ -10,7 +10,7 @@ const ShowAllStatsButton: React.FC<ShowAllStatsButtonProps> = ({
   <div>
     <button
       onClick={showAllStats}
-      className="border text-sm rounded-lg block p-3"
+      className="border text-sm rounded-lg block p-3 hover:bg-white hover:text-black transition ease-in-out duration-300 cursor-pointer"
     >
       Show All
     </button>

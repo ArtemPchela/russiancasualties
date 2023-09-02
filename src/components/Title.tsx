@@ -13,8 +13,8 @@ const Title: React.FC<ITitleProps> = ({ displayData, selectedStartDate }) => {
     <div className="flex flex-col justify-center items-center max-w-[90%] mx-auto bg-10 backdrop-opacity-10 rounded-2xl">
       <h1 className="font-custom text-center mb-2 title">
         {selectedStartDate
-          ? "Russian Casualties by Selected Date"
-          : "Russian Casualties for All Time"}
+          ? "Russian Casualties in Ukraine on Selected Date"
+          : "Russian Casualties in Ukraine Throughout All Time"}
       </h1>
       <div className="text-center">
         <h2 className="font-custom text-[1.75rem] sub-title">Day of War</h2>

@@ -74,7 +74,7 @@ function App() {
   return (
     <>
       <Title displayData={displayData} selectedStartDate={selectedStartDate} />
-      <div className="flex max-w-screen-xl md:flex md:flex-row flex-col gap-4 sm:w-[90%] mx-auto">
+      <main className="flex max-w-screen-xl md:flex md:flex-row flex-col gap-6 sm:w-[90%] mx-auto my-[2rem]">
         <div className="w-[220px] flex-col flex gap-2.5 items-center mt-4 mb-4 md:mb-0 mx-auto">
           <DatePicker
             selectedStartDate={selectedStartDate}
@@ -88,7 +88,7 @@ function App() {
           )}
         </div>
 
-        <div className="w-full min-w-0 max-w-6xl">
+        <div className="w-full min-w-0 max-w-6xl p-6">
           <main className="">
             <div className="rounded-2xl">
               <div className="flex flex-col gap-4">
@@ -103,7 +103,7 @@ function App() {
             </div>
           </main>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

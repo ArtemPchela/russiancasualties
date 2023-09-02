@@ -87,6 +87,13 @@ h1 {
 	z-index: 9999;
 }
 
-select {
-	/*background-color: transparent;*/
+.show-stats-button {
+	opacity: 1;
+	transition: opacity 10s ease-in-out;
+}
+
+.hide-stats-button {
+	opacity: 0;
+	pointer-events: none; /* Disable interactions on hidden element */
+	transition: opacity 10s ease-in-out;
 }
