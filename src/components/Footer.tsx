@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className=" mt-[10%]">
+    <footer className="mt-[10%]">
       <div className="w-[25%] mb-2 bg-black mx-auto">
         <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent shadow-inner"></div>
       </div>
-      <div className="flex justify-center items-end">
+      <div className="flex justify-center items-center flex-col sm:items-end sm:flex-row">
         <span>Created by&nbsp;</span>
         <h2 className="name">
           <a

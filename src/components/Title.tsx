@@ -19,7 +19,7 @@ const Title: React.FC<ITitleProps> = ({ displayData, selectedStartDate }) => {
       <div className="text-center">
         <h2 className="font-custom text-[1.75rem] sub-title">Day of War</h2>
         <span className="text-[1.25rem]">{day || "N/A"}</span>
-        <h2 className="font-custom text-[1.75rem]">Date</h2>
+        <h2 className="font-custom text-[1.75rem] sub-title">Date</h2>
         <span className="text-[1.25rem]">{date || "N/A"}</span>
       </div>
     </div>
