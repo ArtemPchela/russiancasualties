@@ -12,6 +12,9 @@ import RenderCard from "./components/RenderCard.tsx";
 import { generateDateOptions } from "./helpers/GeneratorDataOptions.ts";
 import "./App.css";
 import Footer from "./components/Footer.tsx";
+import UserViews from "./components/UserViews.tsx";
+
+// import SubscribeForm from "./components/Subscription.tsx";
 
 function App() {
   const [selectedStartDate, setSelectedStartDate] = useState<string>("");
@@ -74,8 +77,8 @@ function App() {
   return (
     <>
       <Title displayData={displayData} selectedStartDate={selectedStartDate} />
-      <main className="flex max-w-screen-xl md:flex md:flex-row flex-col gap-6 sm:w-[90%] mx-auto my-[2rem]">
-        <div className="w-[220px] flex-col flex gap-2.5 items-center mt-4 mb-4 md:mb-0 mx-auto">
+      <main className="flex max-w-screen-xl md:flex md:flex-row flex-col gap-6 sm:w-[90%] mx-auto my-[2rem] py-4">
+        <div className="w-[220px] flex-col flex gap-2.5 items-center md:mb-0 mx-auto">
           <DatePicker
             selectedStartDate={selectedStartDate}
             onChangeStartDate={onChangeStartDate}
@@ -86,9 +89,11 @@ function App() {
           ) : (
             <ShowAllStatsButton showAllStats={showAllStats} />
           )}
+
+          <UserViews />
         </div>
 
-        <div className="w-full min-w-0 max-w-6xl p-6">
+        <div className="w-full min-w-0 max-w-6xl px-6">
           <main className="">
             <div className="rounded-2xl">
               <div className="flex flex-col gap-4">
@@ -103,6 +108,7 @@ function App() {
             </div>
           </main>
         </div>
+        {/*<SubscribeForm />*/}
       </main>
       <Footer />
     </>

@@ -1,23 +1,45 @@
+import { useEffect, useState } from "react";
+
+const text = "BeehiveCode";
+
 const Footer = () => {
+  // eslint-disable-next-line no-undef
+  const [formattedText, setFormattedText] = useState<JSX.Element[] | null>(
+    null,
+  );
+
+  useEffect(() => {
+    const formatted = text.split("").map((letters, index) => (
+      <span
+        key={index}
+        className={letters.match(/[A-Z]/) ? "text-[#f9a826]" : "text-[#ffffff]"}
+      >
+        {letters}
+      </span>
+    ));
+
+    setFormattedText(formatted);
+  }, []);
+
   return (
-    <footer>
-      <div className="w-[25%] mb-2 bg-black mx-auto">
-        <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent shadow-inner"></div>
-      </div>
-      <div className="flex justify-center items-center flex-col sm:items-end sm:flex-row">
-        <span>Created by&nbsp;</span>
-        <h2 className="name">
+    <footer className="items-center mx-auto">
+      <span className="items-center flex text-clamp mb-4">
+        <sup className="text-green-500 text-2xl">&#x2a;</sup>
+        Official stats <br /> Ministry of Defence of Ukraine
+      </span>
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent shadow-inner"></div>
+      <div className="justify-center py-2 items-center flex sm:items-end sm:flex-row text-clamp">
+        <span>
+          Created by&nbsp;
           <a
             href="https://artempchelenkov.online/"
             target="_blank"
-            className="relative transition-colors duration-300 ease-in-out hover:text-[#f9a826]"
+            className="transition-colors duration-300 ease-in-out text-secondary hover:text-[#f9a826] underline underline-offset-4 animate-pulse"
           >
-            <span className="text-[#f9a826]">T</span>he
-            <span className="text-[#f9a826]">C</span>raziest
-            <span className="text-[#f9a826]">B</span>ee
+            {formattedText}
           </a>
-        </h2>
-        <span>&nbsp;&copy; 2023</span>
+          &nbsp;&copy; 2023
+        </span>
       </div>
     </footer>
   );

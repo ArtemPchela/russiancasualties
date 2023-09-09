@@ -7,6 +7,9 @@ export default {
         custom: ["CustomFont", "sans-serif"],
         secondary: ["BlackOpsOne-Regular", "sans-serif"],
       },
+      fontSize: {
+        clamp: "clamp(0.9rem, 2vw, 1.2rem)",
+      },
       backdropOpacity: {
         10: "0.1",
       },

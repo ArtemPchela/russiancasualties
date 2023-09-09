@@ -1,4 +1,5 @@
 import React from "react";
+import Preloader from "../helpers/Preloader.tsx";
 
 interface ITitleProps {
   displayData: any;
@@ -16,11 +17,11 @@ const Title: React.FC<ITitleProps> = ({ displayData, selectedStartDate }) => {
           ? "Russian Casualties in Ukraine on Selected Date"
           : "Russian Casualties in Ukraine Throughout All Time"}
       </h1>
-      <div className="text-center">
+      <div className="text-center flex flex-col justify-center items-center">
         <h2 className="font-custom text-[1.75rem] sub-title">Day of War</h2>
-        <span className="text-[1.25rem]">{day || "N/A"}</span>
+        <span className="text-[1.25rem]">{!day ? <Preloader /> : day}</span>
         <h2 className="font-custom text-[1.75rem] sub-title">Date</h2>
-        <span className="text-[1.25rem]">{date || "N/A"}</span>
+        <span className="text-[1.25rem]">{!date ? <Preloader /> : date}</span>
       </div>
     </div>
   );

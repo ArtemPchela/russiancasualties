@@ -2,6 +2,7 @@ import React from "react";
 
 interface DatePickerProps {
   selectedStartDate: string;
+  // eslint-disable-next-line no-unused-vars
   onChangeStartDate: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   dateOptions: string[];
 }
