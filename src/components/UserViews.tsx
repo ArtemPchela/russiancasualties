@@ -15,7 +15,7 @@ function UserViews() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const originalUrl = import.meta.env.VITE_VERCEL_URL;
+        // const originalUrl = import.meta.env.VITE_VERCEL_URL;
         const params = {
           environment: "production",
           filter: "{}",
@@ -29,10 +29,13 @@ function UserViews() {
           Authorization: `Bearer ${token}`,
         };
 
-        const response = await axios.get(originalUrl, {
-          params,
-          headers,
-        });
+        const response = await axios.get(
+          "https://vercel.com/api/web/insights/overview",
+          {
+            params,
+            headers,
+          },
+        );
 
         if (response.status === 200) {
           const responseData = response.data;
