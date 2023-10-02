@@ -12,7 +12,6 @@ import RenderCard from "./components/RenderCard.tsx";
 import { generateDateOptions } from "./helpers/GeneratorDataOptions.ts";
 import "./App.css";
 import Footer from "./components/Footer.tsx";
-import UserViews from "./components/UserViews.tsx";
 
 // import SubscribeForm from "./components/Subscription.tsx";
 
@@ -89,8 +88,6 @@ function App() {
           ) : (
             <ShowAllStatsButton showAllStats={showAllStats} />
           )}
-
-          <UserViews />
         </div>
 
         <div className="w-full min-w-0 max-w-6xl px-6">
